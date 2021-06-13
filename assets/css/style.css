@@ -1,0 +1,44 @@
+:root {
+    
+    --fore: #2885db;
+    --light: rgb(189, 164, 164);
+    --navlink-color: #b9c6ae;
+    --blk: black;
+    --dkblue: #7f5ce2;
+}
+
+
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--dkblue);
+    color: var(--blk);
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+    background-color: var(--fore);
+    opacity: 50%;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
