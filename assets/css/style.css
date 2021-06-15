@@ -146,6 +146,12 @@ caption {
   padding-left:50px;
 }
 
+.workcards img{
+ display: flex;
+ flex-direction: column;
+  width: 40%;
+}
+
 .contact-me{
   display:flex;
   /* justify-content: space-between; */
@@ -194,3 +200,4 @@ caption {
     flex-direction: column;
   }
 }
+
