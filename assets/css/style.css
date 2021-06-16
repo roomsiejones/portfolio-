@@ -4,6 +4,7 @@
   font-size: 24px;
 }
 
+/* Declares colors to be used through-out document */
 :root {
     
     --fore: #a4c2f4;
@@ -13,7 +14,7 @@
     --dkbox: #210a0a;
 }
 
-
+/* header container holding the nav bar and name */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -56,23 +57,26 @@ header nav ul li {
     padding:0px 5px;
     }
 
-    
+ /* Changes link colors in the nav bar */
 header nav ul li a:link{
   color: black;
   opacity: 50%;
 }
 
+/* Changes link colors when hovering over a nav link in the nav bar */
 header nav ul li a:hover{
   color: black;
   opacity:100%;
 }
 
+/* Ensures the image used is a certain height and helps position it */
 img {
   margin-bottom: 15px;
   max-height: 150px;
   
 }
 
+/* moves the subtitle and profile picture onto the image used as the header img*/
 .subtitle{
 display:flex;
 justify-content: flex-end;
@@ -92,6 +96,7 @@ margin-top: -110px;
 margin-left: 15px;
 }
 
+/* About me section containers */
 .about-me{
   display:flex;
   flex-wrap: wrap;
@@ -125,6 +130,8 @@ margin-left: 15px;
   margin-top: 100px;
 }
 
+/* The work section and the card containers are styled below */
+
 .work{
   display:flex;
   justify-content: center;
@@ -145,7 +152,7 @@ margin-left: 15px;
 }
 
 
-
+/* is used to help organize previous and future containers */
 .left{
   width:25%;
 
@@ -205,6 +212,7 @@ margin-right:25%
 
 }
 
+/* contact info stylings */
 .contact-me{
   display:flex;
   flex-wrap: wrap;
@@ -251,6 +259,8 @@ footer h3{
     justify-content: space-around;
   }
 } */
+
+/* changes the flex direction to columns to help responsiveness on smaller screens */
 
 @media all and (max-width: 500px) {
   .nav, .about-me, .work, .contact-me, .contact-me  {

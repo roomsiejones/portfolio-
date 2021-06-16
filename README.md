@@ -37,7 +37,7 @@ Added some comments in code for readablility.
 
 
 
-[Deployed website on GitHub]()
+[Deployed website on GitHub](https://roomsiejones.github.io/portfolio-/)
 
 
-[GitHub Repository Link]()
+[GitHub Repository Link](https://github.com/roomsiejones/portfolio-)
