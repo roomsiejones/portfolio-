@@ -10,6 +10,7 @@
     --light: rgb(189, 164, 164);
     --blk: black;
     --dkblue: #6d9eeb;
+    --dkbox: #210a0a;
 }
 
 
@@ -57,7 +58,6 @@ header nav ul li {
 
     
 header nav ul li a:link{
-  /* color: var(--dkblue) */
   color: black;
   opacity: 50%;
 }
@@ -67,28 +67,10 @@ header nav ul li a:hover{
   opacity:100%;
 }
 
-/* a:visited {
-  color:var(--dkblue)
-} */
-
-/* .hero {
-  background-image: url(assets/images/abstract-technology-banner-background.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 250px;
-  width:100%;
-  margin: 50px;
-} */
-
-
 img {
   margin-bottom: 15px;
   max-height: 150px;
   
-}
-
-caption {
-  /* justify-self: flex-end; */
 }
 
 .subtitle{
@@ -96,13 +78,18 @@ display:flex;
 justify-content: flex-end;
 margin-top: -60px;
 margin-right: 15px;
-
-
 }
 
 .subtitle h3 {
   background-color: var(--fore);
   padding: 3px 10px;
+}
+
+.profile{
+display:flex;
+justify-content: flex-start;
+margin-top: -110px;
+margin-left: 15px;
 }
 
 .about-me{
@@ -117,8 +104,6 @@ margin-right: 15px;
 
 .about-me h2{
   display:flex;
-  
-  /* border-right: 5px solid var(--dkblue); */
   color: var(--dkblue);
   justify-content: center;
   align-self: center;
@@ -127,17 +112,18 @@ margin-right: 15px;
 }
 
 .about-me p{
-  /* border: 1px solid black; */
   display: flex;
   flex-wrap: wrap;
   font-size: 16px;
-  padding: 5%;
-  /* margin-left: 20px; */
-  padding-left:50px;
+  padding: 2% 2% 2% 15%;
+  /* padding-left:100px; */
   width:75%;
   border-left: 5px solid var(--dkblue)
 }
 
+.about-me .left{
+  margin-top: 100px;
+}
 
 .work{
   display:flex;
@@ -151,7 +137,6 @@ margin-right: 15px;
 
 .work h2{
   display:flex;
-  /* border-right: 5px solid var(--dkblue); */
   color: var(--dkblue);
   justify-content: center;
   align-self: center;
@@ -159,15 +144,7 @@ margin-right: 15px;
   padding-right: 3%;
 }
 
-.work div{
-  /* border: 1px solid black; */
-  /* display: flex;
-  flex-wrap: wrap;
-  font-size: 16px;
-  padding: 5%;
-  margin-left: 20px;
-  padding-left:50px; */
-}
+
 
 .left{
   width:25%;
@@ -182,6 +159,7 @@ margin-right: 15px;
   position: absolute;
   height:100%;
   margin-right: 75%;
+  margin-top: 125px;
 }
 
 .wide{
@@ -193,7 +171,6 @@ margin-right: 15px;
 .small{
   width:25%;
   padding-left:10%;
-  /* padding-right:5%; */
   }
 
 .sml-rgt{
@@ -201,51 +178,60 @@ margin-right:25%
 }
 
 .work-cards{
-  /* width:37%; */
   margin-left: 25%;
   border-left: var(--dkblue) solid 5px;
-  /* padding: 4%; */
 }
+
 
 
 .work-cards img{
  display: flex;
  flex-direction: column;
-  /* width: 40%; */
+ flex: 1 1 1;
+}
+
+.wc-pics{
+  border: 1px solid var(--dkblue) ;
+}
+.proj-text{
+  display: inline-flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: -80px;
+  margin-left: 15px;
+  background-color: var(--dkbox);
+  color: white;
+
+
 }
 
 .contact-me{
   display:flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   padding-top: 2%;
   margin-bottom: 50px;
-
+  border-top: var(--dkblue) dotted 5px;
+  margin-top: 20px;
 }
 
 
 .contact-me h2{
   display:flex;
-  /* flex-wrap: wrap; */
   border-right: 5px solid var(--dkblue);
   color: var(--dkblue);
   justify-content: center;
   align-self: right;
   padding-left: 10%;
   margin-left: 1%;
-  /* padding-right: 3%; */
 }
 
 .contact-me div ul{
-  /* border: 1px solid black; */
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   flex-grow: 1;
   font-size: 16px;
-  /* padding 5% */
-  margin-left: auto;
-  /* padding-left:50px; */
+  margin-left: 50px;
 }
 
 .contact-me div ul li{
@@ -260,15 +246,16 @@ footer h3{
  padding-bottom: 100px;
 }
 
-@media all and (max-width: 800px) {
+/* @media all and (max-width: 800px) {
   .nav {
     justify-content: space-around;
   }
-}
+} */
 
 @media all and (max-width: 500px) {
-  .nav, .about-me, .contact-me {
+  .nav, .about-me, .work, .contact-me, .contact-me  {
     flex-direction: column;
+    flex: 1 1 1;
   }
 }
 
